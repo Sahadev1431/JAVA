@@ -10,6 +10,7 @@ public class PrintNum {
             return;
         }
         System.err.println(n);
+
         r1(n+1);
     }
-}
+}                                                                                 
