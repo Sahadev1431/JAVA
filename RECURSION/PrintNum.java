@@ -1,5 +1,3 @@
-package RECURSION;
-
 public class PrintNum {
     public static void main(String[] args) {
         r1(1);

@@ -1,5 +1,3 @@
-package RECURSION;
-
 public class RecursiveBinary {
     public static void main(String[] args) {
         int [] arr = {1,2,3,4,55,66,77};
