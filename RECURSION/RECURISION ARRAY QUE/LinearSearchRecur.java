@@ -6,8 +6,8 @@ public class LinearSearchRecur {
         // System.out.println(recurLinear(arr, 0, 18));
         // findAll(arr, 0, 18);
         // System.out.println(al);
-        ArrayList <Integer> al3 = new ArrayList<>();
-        System.out.println(findAll2(arr, 0, 18, al3));
+        // System.out.println(findAll2(arr, 0, 18, new ArrayList<>()));
+        System.out.println("findAll 3 answer "+findAll3(arr, 0, 18));
     }
 
     static int recurLinear(int []arr,int index,int target) {
@@ -44,5 +44,20 @@ public class LinearSearchRecur {
         }
 
         return findAll2(arr, index+1, target,list);
+    }
+
+    static ArrayList<Integer> findAll3(int []arr,int index,int target) {
+        ArrayList <Integer> list = new ArrayList<>();
+        if (index == arr.length) {
+            return list;
+        }
+
+        if (target == arr[index]) {
+            list.add(index);
+        }
+
+        // findAll3(arr, index+1, target);
+        list.addAll(findAll3(arr, index + 1, target));
+        return list;
     }
 }
