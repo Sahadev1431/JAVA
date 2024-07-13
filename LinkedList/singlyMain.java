@@ -1,4 +1,4 @@
-public class Main {
+public class singlyMain {
     public static void main(String[] args) {
         SingleLL ll = new SingleLL();
         ll.insertFirst(7);
