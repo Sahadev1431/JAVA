@@ -10,8 +10,8 @@ public class RemoveDupInSortedArr {
         int count = 0;
         for (int i = 1; i < arr.length; i++) {
             if (arr[i] != arr[count]) {
-                arr[count+1] = arr[i];
                 count++;
+                arr[count] = arr[i];
             }
         }
         return count+1;
