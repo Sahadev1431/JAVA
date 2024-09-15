@@ -9,6 +9,6 @@ public class FindMEthod2 {
 
         Matcher matcher = pattern.matcher("sahdevnaisahdevsahdev");
 
-        System.out.println(matcher.find(16));           // after 16 th character there will be no word sahdev
+        System.out.println(matcher.find(15));           // after 16 th character there will be no word sahdev
     }
 }

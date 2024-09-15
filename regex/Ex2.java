@@ -6,7 +6,7 @@ public class Ex2 {
         String temp = "a*b";       // * means zero or more characters of a and last should be b;
 
         Pattern pattern = Pattern.compile(temp);
-        Matcher matcher = pattern.matcher("aaab");
+        Matcher matcher = pattern.matcher("aab");
 
         boolean result = matcher.matches();
 
